@@ -167,3 +167,16 @@ img{max-width:100%;height:auto}
 }
 /* Focus ring for keyboard users */
 :focus-visible{outline:3px solid var(--brand-300);outline-offset:2px}
+
+/* CTA Permohonan grid */
+.cta-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-6);align-items:center}
+.cta-actions{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap}
+
+@media (max-width: 860px){
+  .cta-grid{grid-template-columns:1fr}
+}
+@media (max-width: 600px){
+  /* Allow buttons to wrap to 2 lines without overlap */
+  .btn{height:auto;padding:10px 16px}
+  .cta-actions .btn{flex:1 1 auto}
+}
