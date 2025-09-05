@@ -9,7 +9,6 @@ Siap deploy di **Netlify** (Drop folder / hubungkan repo).
 - Ganti logo di `assets/img/logo-mark.svg` dan `assets/img/favicon.svg` jika tersedia.
 
 ## Struktur
-- Halaman: Beranda, Profil, Informasi Publik (Berkala/Setiap Saat/Serta Merta), Layanan Informasi, Standar Layanan, Survei Layanan, Berita, FAQ.
+- Halaman: Beranda, Profil, Informasi Publik (Berkala/Setiap Saat/Serta Merta), Layanan Informasi, Standar Layanan.
 - Aksesibilitas: skip-link, focus ring, keyboard-friendly dropdown, kontras warna baik.
 - Responsif: desktop ↔ mobile dengan nav toggle.
-
