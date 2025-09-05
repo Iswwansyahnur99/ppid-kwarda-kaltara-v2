@@ -55,7 +55,7 @@ img{max-width:100%;height:auto}
 .brand-text span{font-size:var(--font-s);color:var(--muted)}
 
 .navmenu{list-style:none;display:flex;gap:var(--space-2);margin:0 0 0 auto;padding:0}
-.navitem>a,.sub-toggle{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 12px;border-radius:12px;border:1px solid transparent;font-weight:600;white-space:nowrap}
+.navitem>a,.sub-toggle{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 12px;border-radius:12px;border:1px solid transparent;font-weight:600;white-space:nowrap;background:transparent;appearance:none;cursor:pointer}
 .navitem>a:hover,.sub-toggle:hover{background:var(--brand-50)}
 .navitem.active>a{border-color:var(--brand-200);background:var(--brand-50)}
 .has-sub{position:relative}
@@ -151,10 +151,10 @@ img{max-width:100%;height:auto}
   .subpanel{position:static;display:block;border:none;box-shadow:none;padding:0;margin:6px 0 0 10px}
   .has-sub .sub-toggle{display:none}
 }
-/* Desktop: bagi rata jarak antar item menu */
+/* Desktop: rapatkan item menu (tanpa spasi berlebihan) */
 @media (min-width: 861px){
   .nav-inner{gap:var(--space-6)}
-  .navmenu{display:flex;justify-content:space-between;align-items:center;width:100%;margin-left:auto;flex-wrap:nowrap}
+  .navmenu{display:flex;gap:var(--space-2);align-items:center;margin-left:auto}
   .navitem{flex:0 0 auto}
   .navitem>a,.sub-toggle{width:auto;justify-content:center}
 }
